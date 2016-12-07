@@ -14,7 +14,7 @@ gulp.task('jshint', function(){
 }) ;*/
 
 gulp.task('watch', function(){
-	gulp.watch('./*.html', reload);
+	gulp.watch('./src/*.html', reload);
 
 	/*gulp.watch('./src/*.html', reload);
 	gulp.watch('./src/*.js', reload);
