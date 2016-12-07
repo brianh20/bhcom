@@ -1,7 +1,19 @@
 var app = angular.module('app', ['ui.router']);
 
 app.config(function($stateProvider){
-	//$urlRouteProvider.otherwise("/");
+	//$urlRouteProvider.otherwise('');
+
+	var contact = {
+		name: 'contact',
+		url: '/contact',
+		templateUrl : '/app/pages/contact.html'
+	}
+
+	var gallery = {
+		name: 'gallery',
+		url: '/gallery',
+		templateUrl : '/app/pages/gallery.html'
+	}
 
 	var home = {
 		name: 'home',
@@ -9,12 +21,16 @@ app.config(function($stateProvider){
 		templateUrl : '/app/pages/home.html'
 	}
 
+	var services = {
+		name: 'services',
+		url: '/services',
+		templateUrl : '/app/pages/services.html'
+	}
+
+	$stateProvider.state(contact);
+	$stateProvider.state(gallery);
 	$stateProvider.state(home);
-/*	$stateProvider.state(newSensor);
-	$stateProvider.state(newElement);
-	$stateProvider.state(viewSensors);
-	$stateProvider.state(viewElements);
-	$stateProvider.state(editElement);*/
+	$stateProvider.state(services);
 	
 });
 
