@@ -34,6 +34,19 @@ app.config(function($stateProvider){
 	
 });
 
+app.directive('siteheader', function(){
+  return{
+    templateUrl : '/app/widgets/siteheader.html'
+  };
+});
+
+app.directive('sitefooter', function(){
+  return{
+    templateUrl : '/app/widgets/sitefooter.html'
+  };
+});
+
+
 /*
 app.directive('navbar', function(){
   return{
