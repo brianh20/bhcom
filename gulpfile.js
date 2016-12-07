@@ -16,7 +16,7 @@ gulp.task('jshint', function(){
 gulp.task('watch', function(){
 	gulp.watch('./src/*.html', reload);
 
-	/*gulp.watch('./src/*.html', reload);
+	/*gulp.watch('./src/app*.html', reload);
 	gulp.watch('./src/*.js', reload);
 
 	gulp.watch('./src/app/*.html', reload);
@@ -25,8 +25,9 @@ gulp.task('watch', function(){
 	gulp.watch('./src/app/pages/*.html', reload);
 	gulp.watch('./src/app/widgets/*.html', reload);
 
-	gulp.watch('./src/app/style/*.less', ['less']);
-	gulp.watch('./src/app/style/*.css', reload);*/
+	
+	gulp.watch('./src/app/style/*.less', ['less']);*/
+	gulp.watch('./src/app/style/*.css', reload);
 });
 
 
