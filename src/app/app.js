@@ -52,6 +52,30 @@ app.directive('navbar', function(){
   };
 });
 
+app.directive('projects', function(){
+  return{
+    templateUrl : '/app/widgets/projects.html'
+  };
+});
+
+app.directive('servicelist', function(){
+  return{
+    templateUrl : '/app/widgets/servicelist.html'
+  };
+});
+
+app.directive('home', function(){
+  return{
+    templateUrl : '/app/widgets/home.html'
+  };
+});
+
+app.directive('contact', function(){
+  return{
+    templateUrl : '/app/widgets/contact.html'
+  };
+});
+
 /*
 app.controller('editElement', function($scope) {
 

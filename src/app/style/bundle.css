@@ -1,11 +1,25 @@
+home servicelist article {
+  margin-bottom: 100px;
+}
+
+navbar nav ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+navbar nav ul li {
+  display: inline-flex;
+}
 navbar span.icon-bar {
   background-color: red;
 }
-navbar .navbar-collapse {
-  background-color: #eee;
+navbar .navbar {
+  background-color: #fff;
+  margin-bottom: 0px;
+  border: none;
 }
 
-footer {
+sitefooter footer {
   display: block;
   position: fixed;
   bottom: 0px;
@@ -15,14 +29,7 @@ footer {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-nav ul {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-}
-nav ul li {
-  display: inline-flex;
-}
+
 .col-sm-4,
 .col-sm-8 {
   border: 1px solid black;
