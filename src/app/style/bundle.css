@@ -19,22 +19,27 @@ navbar .navbar {
   border: none;
 }
 
-projects .jumbotron {
+projects .gallery {
+  margin-bottom: 50px;
+}
+projects .gallery .jumbotron {
   background-image: url('../../app/assets/headers/projects.jpg');
   background-repeat: no-repeat;
   background-position: top center;
   background-attachment: cover;
   background-size: 100%;
 }
-projects .jumbotron h1 {
+projects .gallery .jumbotron h1 {
   letter-spacing: 1rem;
 }
-projects .brand {
+projects .gallery .brand {
   height: 200px;
-  max-height: 130px;
+  max-height: 100px;
+  padding-top: 15px;
+  margin-bottom: 15px;
 }
-projects .brand img {
-  max-height: 130px;
+projects .gallery .brand img {
+  max-height: 100px;
   width: auto;
   max-width: 200px;
   position: absolute;
@@ -46,6 +51,7 @@ projects .brand img {
 }
 
 sitefooter footer {
+  background-color: #eee;
   display: block;
   position: fixed;
   bottom: 0px;
