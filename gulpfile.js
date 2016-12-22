@@ -16,28 +16,27 @@ gulp.task('jshint', function(){
 gulp.task('watch', function(){
 	gulp.watch('./src/*.html', reload);
 
-	/*gulp.watch('./src/app*.html', reload);
-	gulp.watch('./src/*.js', reload);
-
-	gulp.watch('./src/app/*.html', reload);
+	//gulp.watch('./src/app/*.html', reload);
 	gulp.watch('./src/app/*.js', reload);
 
 	gulp.watch('./src/app/pages/*.html', reload);
 	gulp.watch('./src/app/widgets/*.html', reload);
-
-	
-	gulp.watch('./src/app/style/*.less', ['less']);*/
+	gulp.watch(['./src/app/widgets/*.less',
+				'./src/app/style/style.less'], ['less']);
 	gulp.watch('./src/app/style/*.css', reload);
 });
 
 
+
+
 gulp.task('less', function() {
-    /*return gulp.src('./src/app/style/*.less')
+    return gulp.src(['./src/app/widgets/*.less',
+					 './src/app/style/style.less'])
 	    .pipe(sourcemaps.init())
 	    .pipe(less())
 	    .pipe(concat('./src/app/style/bundle.css'))
 	    .pipe(sourcemaps.write('.'))
-	    .pipe(gulp.dest('./'));*/
+	    .pipe(gulp.dest('./'));
 });
 
 gulp.task('serve', ['less'], function(){

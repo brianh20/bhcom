@@ -46,14 +46,13 @@ app.directive('sitefooter', function(){
   };
 });
 
-
-/*
 app.directive('navbar', function(){
   return{
     templateUrl : '/app/widgets/navbar.html'
   };
 });
 
+/*
 app.controller('editElement', function($scope) {
 
 	angular.element(document).ready(function () {
