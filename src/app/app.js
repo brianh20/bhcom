@@ -20,6 +20,11 @@ app.config(function($stateProvider){
 		url: '',
 		templateUrl : '/app/pages/home.html'
 	}
+	var home_alt = {
+		name: 'home_alt',
+		url: '#/',
+		templateUrl : '/app/pages/home.html'
+	}
 
 	var services = {
 		name: 'services',
@@ -30,6 +35,7 @@ app.config(function($stateProvider){
 	$stateProvider.state(contact);
 	$stateProvider.state(gallery);
 	$stateProvider.state(home);
+	$stateProvider.state(home_alt);
 	$stateProvider.state(services);
 	
 });
