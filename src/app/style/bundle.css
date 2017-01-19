@@ -1,3 +1,34 @@
+contact .contact {
+  margin-bottom: 50px;
+}
+contact .contact .jumbotron {
+  background-image: url('../../app/assets/headers/contact.png');
+  background-repeat: no-repeat;
+  background-position: 100% 45%;
+  background-attachment: cover;
+  background-size: 100%;
+}
+contact .contact .jumbotron h1 {
+  letter-spacing: 1rem;
+}
+contact .contact .brand {
+  height: 200px;
+  max-height: 100px;
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+contact .contact .brand img {
+  max-height: 100px;
+  width: auto;
+  max-width: 200px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 home servicelist article {
   margin-bottom: 100px;
 }
@@ -25,7 +56,7 @@ projects .gallery {
 projects .gallery .jumbotron {
   background-image: url('../../app/assets/headers/projects.jpg');
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center;
   background-attachment: cover;
   background-size: 100%;
 }
@@ -39,6 +70,37 @@ projects .gallery .brand {
   margin-bottom: 15px;
 }
 projects .gallery .brand img {
+  max-height: 100px;
+  width: auto;
+  max-width: 200px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+servicelist .services {
+  margin-bottom: 50px;
+}
+servicelist .services .jumbotron {
+  background-image: url('../../app/assets/headers/services.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: cover;
+  background-size: 100%;
+}
+servicelist .services .jumbotron h1 {
+  letter-spacing: 1rem;
+}
+servicelist .services .brand {
+  height: 200px;
+  max-height: 100px;
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+servicelist .services .brand img {
   max-height: 100px;
   width: auto;
   max-width: 200px;
@@ -69,6 +131,15 @@ sitefooter footer {
 }
 article {
   margin-top: 50px;
+}
+a {
+  color: #333;
+}
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  color: #333;
 }
 
 /*# sourceMappingURL=bundle.css.map */
